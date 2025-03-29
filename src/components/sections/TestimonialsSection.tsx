@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Quotes } from 'lucide-react';
+import { Quote } from 'lucide-react';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-charity-light rounded-lg shadow-md p-6 relative">
               <div className="absolute top-6 left-6 text-charity-green opacity-20">
-                <Quotes size={48} />
+                <Quote size={48} />
               </div>
               <div className="pt-8 px-4 pb-4 relative z-10">
                 <p className="italic text-gray-700 mb-6">{testimonial.quote}</p>
