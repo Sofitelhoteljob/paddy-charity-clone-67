@@ -1,25 +1,20 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  return (
-    <>
+  return <>
       {/* Top Bar */}
       <div className="bg-charity-green text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
             <span>Email: info@paddydemo.org</span>
             <span>Phone: +1 (555) 123-4567</span>
-            <span>Kampala, Uganda</span>
+            
           </div>
           <div className="hidden md:flex items-center space-x-4 text-sm">
             <span>Follow Us:</span>
@@ -61,8 +56,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="md:hidden py-4 pb-6">
+          {isMenuOpen && <div className="md:hidden py-4 pb-6">
               <div className="flex flex-col space-y-4">
                 <Link to="/" className="text-charity-dark hover:text-charity-green font-medium">Home</Link>
                 <Link to="/about" className="text-charity-dark hover:text-charity-green font-medium">About</Link>
@@ -72,12 +66,9 @@ const Navbar = () => {
                 <Link to="/contact" className="text-charity-dark hover:text-charity-green font-medium">Contact</Link>
                 <Button className="btn-charity w-full">Donate Now</Button>
               </div>
-            </div>
-          )}
+            </div>}
         </div>
       </nav>
-    </>
-  );
+    </>;
 };
-
 export default Navbar;
