@@ -23,7 +23,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 text-charity-green" size={18} />
-                <span>info@charity.org</span>
+                <span>info@paddydemo.org</span>
               </li>
             </ul>
             <div className="flex space-x-4 mt-6">
@@ -97,7 +97,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} CharityOrg. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Paddy Demo. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

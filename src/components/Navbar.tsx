@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="bg-charity-green text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
-            <span>Email: info@charity.org</span>
+            <span>Email: info@paddydemo.org</span>
             <span>Phone: +1 (555) 123-4567</span>
           </div>
           <div className="hidden md:flex items-center space-x-4 text-sm">
@@ -35,8 +35,8 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
-                <span className="text-charity-green text-2xl font-bold">Charity</span>
-                <span className="text-charity-dark text-2xl font-bold">Org</span>
+                <span className="text-charity-green text-2xl font-bold">Paddy</span>
+                <span className="text-charity-dark text-2xl font-bold">Demo</span>
               </Link>
             </div>
 
