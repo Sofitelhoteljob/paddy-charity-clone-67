@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="bg-charity-green text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
-            
+            <span>Email: info@paddydemo.org</span>
             <span>Phone: +1 (555) 123-4567</span>
             
           </div>
