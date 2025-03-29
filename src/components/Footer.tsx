@@ -15,7 +15,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="mr-2 mt-1 text-charity-green" size={18} />
-                <span>123 Charity Street, City Name, Country</span>
+                <span>Plot 123, Charity Street, Kampala, Uganda</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 text-charity-green" size={18} />
@@ -98,6 +98,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Paddy Demo. All Rights Reserved.</p>
+          <p className="mt-2">Kampala, Uganda</p>
         </div>
       </div>
     </footer>

@@ -44,6 +44,9 @@ const About = () => {
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   Our mission is to create a world where every person has access to the basic necessities of life: clean water, nutritious food, quality education, and adequate healthcare. We believe that by addressing these fundamental needs, we can help communities thrive and build a more equitable world.
                 </p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  Based in Kampala, Uganda, we work closely with local communities to understand their unique challenges and develop sustainable solutions that empower people to create better futures for themselves and their families.
+                </p>
                 <p className="text-gray-700 mb-8 leading-relaxed">
                   Our vision is a world where poverty and inequality are eliminated, where every child has the opportunity to reach their full potential, and where communities are empowered to create sustainable solutions to their most pressing challenges.
                 </p>

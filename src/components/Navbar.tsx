@@ -19,6 +19,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4 text-sm">
             <span>Email: info@paddydemo.org</span>
             <span>Phone: +1 (555) 123-4567</span>
+            <span>Kampala, Uganda</span>
           </div>
           <div className="hidden md:flex items-center space-x-4 text-sm">
             <span>Follow Us:</span>
