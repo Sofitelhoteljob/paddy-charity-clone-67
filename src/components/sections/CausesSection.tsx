@@ -1,7 +1,8 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import DonationModal from '@/components/DonationModal';
 
 interface CauseCardProps {
   title: string;
@@ -13,6 +14,7 @@ interface CauseCardProps {
 
 const CauseCard: React.FC<CauseCardProps> = ({ title, description, imageSrc, raised, goal }) => {
   const progress = (raised / goal) * 100;
+  const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
   
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -35,8 +37,18 @@ const CauseCard: React.FC<CauseCardProps> = ({ title, description, imageSrc, rai
           </div>
         </div>
         
-        <Button className="btn-charity w-full">Donate Now</Button>
+        <Button 
+          className="btn-charity w-full"
+          onClick={() => setIsDonationModalOpen(true)}
+        >
+          Donate Now
+        </Button>
       </div>
+      <DonationModal 
+        open={isDonationModalOpen}
+        onOpenChange={setIsDonationModalOpen}
+        causeTitle={title}
+      />
     </div>
   );
 };
