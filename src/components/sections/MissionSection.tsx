@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { WaterDropIcon, BookOpen, Utensils, Heart } from 'lucide-react';
+import { Droplet, BookOpen, Utensils, Heart } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const MissionSection = () => {
   const missions = [
     {
-      icon: <WaterDropIcon className="w-12 h-12 text-charity-green" />,
+      icon: <Droplet className="w-12 h-12 text-charity-green" />,
       title: 'Water Scarcity',
       description: 'Providing clean water to communities facing water scarcity around the world.',
       link: '#'
