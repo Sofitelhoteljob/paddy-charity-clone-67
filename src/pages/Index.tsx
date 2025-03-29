@@ -10,6 +10,12 @@ import MissionSection from '@/components/sections/MissionSection';
 import HelpSection from '@/components/sections/HelpSection';
 import ShopSection from '@/components/sections/ShopSection';
 import VolunteersSection from '@/components/sections/VolunteersSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import ImpactCounterSection from '@/components/sections/ImpactCounterSection';
+import EventsSection from '@/components/sections/EventsSection';
+import BlogPreviewSection from '@/components/sections/BlogPreviewSection';
+import DonationCalculatorSection from '@/components/sections/DonationCalculatorSection';
+import NewsletterSection from '@/components/sections/NewsletterSection';
 
 const Index = () => {
   return (
@@ -19,11 +25,17 @@ const Index = () => {
         <HeroSection />
         <FeatureCards />
         <CausesSection />
+        <ImpactCounterSection />
         <AboutSection />
+        <TestimonialsSection />
         <MissionSection />
+        <DonationCalculatorSection />
+        <EventsSection />
         <HelpSection />
-        <ShopSection />
+        <BlogPreviewSection />
         <VolunteersSection />
+        <ShopSection />
+        <NewsletterSection />
       </main>
       <Footer />
     </div>
