@@ -1,6 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -12,6 +19,9 @@ const HeroSection = () => {
   ];
 
   useEffect(() => {
+    // Verify images are loading by logging to console
+    console.log("Hero images to load:", images);
+    
     const timer = setInterval(() => {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
@@ -24,6 +34,17 @@ const HeroSection = () => {
   return (
     <div className="relative h-[600px] bg-charity-dark flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
+      
+      {/* Use background image fallback in case direct images don't load */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ 
+          backgroundImage: `url(${images[currentImageIndex]})`,
+          transition: 'background-image 1s ease-in-out'
+        }}
+      />
+      
+      {/* Original image elements */}
       {images.map((image, index) => (
         <div
           key={image}
