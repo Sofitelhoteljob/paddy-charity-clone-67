@@ -38,7 +38,7 @@ const FeatureCards = () => {
               <h3 className="text-xl font-bold ml-4">{feature.title}</h3>
             </div>
             <p className="mb-6">{feature.description}</p>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-charity-green transition-colors">
+            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-charity-green transition-colors font-medium">
               {feature.buttonText}
             </Button>
           </div>

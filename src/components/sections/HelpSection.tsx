@@ -54,7 +54,7 @@ const HelpSection = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">{option.title}</h3>
               <p className="opacity-80 mb-6">{option.description}</p>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-charity-dark">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-charity-dark font-medium">
                 {option.buttonText}
               </Button>
             </div>

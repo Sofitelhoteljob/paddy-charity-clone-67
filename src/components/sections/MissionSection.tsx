@@ -50,7 +50,7 @@ const MissionSection = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">{mission.title}</h3>
               <p className="text-gray-600 mb-4">{mission.description}</p>
-              <Button variant="outline" className="btn-charity-outline">
+              <Button variant="outline" className="btn-charity-outline font-medium">
                 Read More
               </Button>
             </div>
