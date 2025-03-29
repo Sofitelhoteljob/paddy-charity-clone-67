@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -7,25 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  return <>
-      {/* Top Bar */}
-      <div className="bg-charity-green text-white py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4 text-sm">
-            <span>Email: info@paddydemo.org</span>
-            <span>Phone: +1 (555) 123-4567</span>
-            
-          </div>
-          <div className="hidden md:flex items-center space-x-4 text-sm">
-            <span>Follow Us:</span>
-            <a href="#" className="hover:text-gray-200">Facebook</a>
-            <a href="#" className="hover:text-gray-200">Twitter</a>
-            <a href="#" className="hover:text-gray-200">Instagram</a>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Navbar */}
+  return (
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
@@ -69,6 +52,6 @@ const Navbar = () => {
             </div>}
         </div>
       </nav>
-    </>;
+    );
 };
 export default Navbar;
